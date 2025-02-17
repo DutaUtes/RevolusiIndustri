@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2e2;
+}
+
+header {
+    background-image: url(Assets/RevolusiIndustri0.jpg);
+    background-size: cover;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* background: #35424a; */
+    color: #35424a;
+    text-align: center;
+    height: 550px;
+}
+
+header div {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+    background-color: #384750;
+}
+
+nav ul {
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    gap: 1rem;
+}
+
+nav ul li {
+    color: white;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .2s all ease-in-out;
+    -webkit-transition: .2s all ease-in-out;
+    -moz-transition: .2s all ease-in-out;
+    -ms-transition: .2s all ease-in-out;
+    -o-transition: .2s all ease-in-out;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    width: 1400px;
+    justify-self: center;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+section div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+}
+
+h2 {
+    color: #35424a;
+}
+
+.responsive {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+details {
+    margin-top: 10px;
+    background: #e7f3fe;
+    border-left: 4px solid #2196F3;
+    padding: 10px;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0;
+    width: 100%;
+    background-color: #35424a;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 .5rem;
+}
+
+.footer-icons svg {
+    fill: rgb(176, 173, 173);
+}
+
+.footer-icons a:hover svg.github {
+    fill: #000;
+}
+
+.footer-icons a:hover svg.linked {
+    fill: #0E76A8;
+}
+
+.footer-icons a:hover svg.insta {
+    fill: #FE0B81;
+}
+
+.footer-icons h1 {
+    padding-top: .5rem;
+    font-size: 1rem;
+    color: rgb(176, 173, 173);
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+
+.footer-icons h1:hover {
+    color: #4A628A;
+    font-weight: bolder;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
